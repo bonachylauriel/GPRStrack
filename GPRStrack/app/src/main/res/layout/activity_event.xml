@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EventActivity">
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/purple_700">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_back"
+            android:background="@drawable/whitebutton"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="7dp"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:lines="1"
+            android:textAlignment="center"
+            android:fontFamily="@font/fjallaoneregular"
+            android:textStyle="bold"
+            android:text="@string/addCustomEvent"
+            android:textColor="#FFFFFF"
+            tools:ignore="TextContrastCheck" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1dfdf"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cecccc"
+        android:layout_below="@id/action_bar"/>
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:orientation="vertical"
+        android:layout_below="@id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:id="@+id/zoomio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@+id/fonctio"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="240dp"
+            android:layout_marginStart="9dp">
+
+            <ImageButton
+                android:id="@+id/zoom_in"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/zoom_in_selector"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/zoom_out"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/zoom_out_selector"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fonctio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginStart="9dp">
+
+            <ImageButton
+                android:id="@+id/showtails"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/tail_active"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/geofences"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/geofence_active"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/map_layer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/map_layer_change_icon_inactive"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/map_trafic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/grey_round_rect"
+                android:src="@drawable/trafficmap_off"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

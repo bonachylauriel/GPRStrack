@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CodePerduActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapbg"
+        android:src="@drawable/login_mapbg"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/app_name" />
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/icon"
+        android:src="@drawable/icon"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/logoimg"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logogtech" />
+
+        <EditText
+            android:id="@+id/Edtxt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoimg"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/pr_ciser_email_ressent"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp"
+            android:textColorHint="#546E7A" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/spinnerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Edtxt_email"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/text_perduinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/en_demandant_la_r_initialisation_de_votre_mot_de_passe_vous_acceptez_nos_conditions_de_changements_de_mots_de_passe_votre_nouveau_mot_de_passe_vous_sera_remis_par_un_agent_uniquement_dans_nos_locaux"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/spinnerLayout"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/btn_codeperdu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_selectable_right_selected"
+                android:fontFamily="@font/fjallaoneregular"
+                android:text="@string/register"
+                android:textColor="#263238"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_below="@id/layout_btn"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_selectable_right_selected"
+            android:fontFamily="@font/fjallaoneregular"
+            android:text="@string/connexion"
+            android:textColor="#263238"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+</RelativeLayout>

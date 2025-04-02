@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_balises"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/balise_tete"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/lightgray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/sdgdsgsdg"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/backleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="100dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_baseline_close_24"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/search_balise"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_below="@id/balise_tete"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:iconifiedByDefault="false"
+        android:layout_alignParentTop="false"
+        android:queryHint="Rechercher"
+        android:background="@color/whitesplash"
+        android:searchIcon="@drawable/icon_search"
+        android:textAlignment="center" />
+
+    <ExpandableListView
+        android:id="@+id/expandable_listview_balises"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/search_balise"
+        android:background="@color/white"
+        android:divider="@color/black"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@null"
+
+        android:choiceMode="singleChoice"
+        tools:ignore="KeyboardInaccessibleWidget,PrivateResource">
+    </ExpandableListView>
+
+    <RelativeLayout
+        android:id="@+id/nodata_layoutobjects"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="gone"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/noEventsData"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WelcomeActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/welcomeimage"
+        android:layout_width="271dp"
+        android:layout_height="169dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/maplocatoin">
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <TextView
+        android:id="@+id/text_bienvenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="180dp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_marginBottom="339dp"
+        android:text="@string/text_bienvenu"
+        android:fontFamily="@font/fjallaoneregular"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeimage"
+        app:layout_constraintVertical_bias="0.181" />
+    <TextView
+        android:id="@+id/soustext_bienvenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textStyle="italic"
+        android:textColor="@color/blue"
+        android:text="@string/text_sous_bienvenu"
+        app:layout_constraintTop_toBottomOf="@+id/text_bienvenue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="422dp" />
+    <TextView
+        android:id="@+id/text_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textStyle="italic"
+        android:textColor="@color/blue"
+        android:text="@string/version_1_0_1"
+        app:layout_constraintTop_toBottomOf="@+id/soustext_bienvenue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <Button
+            android:id="@+id/btn_lostcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/fjallaoneregular"
+            android:textSize="14sp"
+            android:text="@string/code_perdu" />
+
+        <Button
+            android:id="@+id/btn_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/fjallaoneregular"
+            android:textSize="14sp"
+            android:text="CONNEXION" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "905274099830",
+    "project_id": "gprstrack-e921a",
+    "storage_bucket": "gprstrack-e921a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905274099830:android:f914a7077a29df022cb757",
+        "android_client_info": {
+          "package_name": "com.gabontech.gprstrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905274099830-8o8uajli4tne2h45q1pgmd100r9hmj8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCeeUMoX8yiE4087Z3unw4AFPLDmMD6Uo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905274099830-8o8uajli4tne2h45q1pgmd100r9hmj8o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

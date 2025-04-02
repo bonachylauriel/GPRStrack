@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/drawable/ic_address.xml" value="0.1475" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/activity_code_perdu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/activity_drawer_base.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/activity_event.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/activity_history.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/activity_history_item_coord_details.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/activity_history_item_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/activity_map.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/activity_no_internet.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/activity_sendcommand.xml" value="0.1640625" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/activity_settings.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/activity_view_history_chart.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/activity_welcome.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/adapter_alerts.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/adapter_historylog.xml" value="0.33" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/adapter_info_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/adapter_objectgroups.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/adapter_objects_child.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/adapter_setup_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/content_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/layout_events.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/layout_objects.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/layout/test.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/GTECH/AndroidStudioProjects/GPRSTrack/app/src/main/res/menu/history_menu.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

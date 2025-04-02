@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:button="@drawable/checkbox"
+        android:textColor="#777777" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/checkbox"
+        android:text="TextView"
+        android:textColor="#202020"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/delete"
+        android:src="@drawable/delete"
+        android:background="@drawable/grey_round_stroke"
+        android:padding="8dp"
+        android:adjustViewBounds="false"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/edit"
+        android:src="@drawable/gear"
+        android:background="@drawable/grey_round_stroke"
+        android:padding="8dp"
+        android:adjustViewBounds="false"
+        android:layout_toStartOf="@id/delete"
+        android:layout_marginEnd="10dp"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

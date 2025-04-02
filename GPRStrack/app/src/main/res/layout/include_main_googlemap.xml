@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:id="@+id/zoomio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@+id/fonctio"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="230dp"
+            android:layout_marginStart="9dp">
+            <ImageButton
+                android:id="@+id/zoom_in"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/zoom_in_selector"
+                android:layout_marginStart="4dp"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/zoom_out"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/zoom_out_selector"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fonctio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginStart="9dp">
+
+            <ImageButton
+                android:id="@+id/showtails"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/tail_active"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck" />
+            <ImageButton
+                android:id="@+id/geofences"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/geofence_active"
+                android:layout_marginTop="0dp"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/map_layer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/map_layer_change_icon_inactive"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck" />
+            <ImageButton
+                android:id="@+id/map_trafic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/grey_round_rect"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/trafficmap_off"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="gone"
+        android:gravity="center">
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:indeterminate="true"
+            style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nodata_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="gone"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/noMapData"/>
+    </RelativeLayout>
+
+</RelativeLayout>

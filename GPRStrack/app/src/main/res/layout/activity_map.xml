@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawerLayouto"
+    android:layout_height="match_parent"
+    tools:context=".activities.MapActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/navigationViewRight"
+        android:theme="@style/navigationTheme"
+        android:layout_marginTop="0sp"
+        android:layout_marginBottom="1dp"
+        android:clickable="true"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:focusable="true">
+        <include
+            layout="@layout/layout_events"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/navigationViewLeft"
+        android:theme="@style/navigationTheme"
+        android:layout_marginTop="0sp"
+        android:layout_marginBottom="1dp"
+        android:clickable="true"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:focusable="true">
+        <include
+            layout="@layout/layout_objects"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <include
+        layout="@layout/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

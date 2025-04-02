@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/timing_path"
+        android:layout_width="wrap_content"
+        android:layout_height="48sp"
+        android:gravity="center"
+        android:layout_marginTop="10sp"
+        android:text="9:27"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/timeline"
+        android:layout_width="48dp"
+        android:layout_height="58sp"
+        android:layout_toEndOf="@id/timing_path"
+        android:background="@drawable/history_moving_marker">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_play_24"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="1sp"
+        android:layout_toRightOf="@id/date_icon"
+        android:text="device name"
+        android:textColor="#202020"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/date_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0sp"
+        android:layout_toEndOf="@id/timeline"
+        android:src="@drawable/ic_time_24" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0sp"
+        android:layout_toEndOf="@id/date_icon"
+        android:text="date"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="0sp"
+        android:lines="1"
+        android:layout_toEndOf="@id/date"
+        android:text="En Mouvement"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500" />
+
+    <ImageView
+        android:id="@+id/speedi"
+        android:layout_width="30sp"
+        android:layout_height="20sp"
+        android:layout_below="@+id/device_name"
+        android:layout_toEndOf="@id/date_icon"
+        android:src="@drawable/engine"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_below="@id/device_name"
+        android:layout_marginStart="5sp"
+        android:layout_toEndOf="@+id/speedi"
+        android:text="2.6km/h"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/truck"
+        android:layout_width="20sp"
+        android:layout_height="18sp"
+        android:layout_below="@id/device_name"
+        android:layout_marginStart="5sp"
+        android:layout_toEndOf="@id/text_speed"
+        android:src="@drawable/map_simple_marker"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/time_made"
+        android:layout_width="wrap_content"
+        android:layout_height="18sp"
+        android:layout_below="@id/device_name"
+        android:layout_marginStart="5sp"
+        android:layout_toEndOf="@id/truck"
+        android:text="49min"
+        android:textColor="#000"
+        android:textSize="12sp" />
+    <ImageView
+        android:id="@+id/distance"
+        android:layout_width="20sp"
+        android:layout_height="18sp"
+        android:src="@drawable/ic_distance"
+        android:layout_below="@id/device_name"
+        android:layout_toEndOf="@id/time_made"
+        android:layout_marginStart="5sp"
+        tools:ignore="ContentDescription"/>
+    <TextView
+        android:id="@+id/distance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="18sp"
+        android:layout_below="@id/device_name"
+        android:layout_marginStart="5sp"
+        android:layout_toEndOf="@id/distance"
+        android:text="23km"
+        android:textColor="#000"
+        android:textSize="12sp" />
+</RelativeLayout>

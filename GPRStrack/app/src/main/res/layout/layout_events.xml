@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:theme="@style/Theme.GPRStrack"
+    android:id="@+id/layout_evennements"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/event_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:layout_gravity="center"
+        android:background="@color/purple_500"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageButton
+            android:id="@+id/backRigt"
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:background="@color/black_overlay"
+            android:src="@drawable/ic_baseline_close_24"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview_evennt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_actionBar"
+        android:choiceMode="singleChoice"
+        android:divider="@color/backgroundcolor"
+        android:dividerHeight="6dp"
+        android:listSelector="#FFFFFF"/>
+
+    <RelativeLayout
+        android:id="@+id/rien_a_voir"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="gone"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/aucun_evet"/>
+    </RelativeLayout>
+
+</RelativeLayout>
